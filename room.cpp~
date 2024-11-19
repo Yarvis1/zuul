@@ -1,0 +1,11 @@
+#include <iostream>
+#include <cstring>
+#include <vector>
+#include <map>
+
+struct room{
+  char name[25];
+  int id;
+  char description[120];
+};
+
