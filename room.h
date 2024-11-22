@@ -2,24 +2,21 @@
 #include <cstring>
 #include <vector>
 #include <map>
-#include <room.cpp>
-#include <main.cpp>
 class room{
  private:
   int roomId;
-  char name[25];
+  char name[150];
   char description[150];
  public:
-  room(int roomId==0, const char roomName= "". const char*roomDescription="");
+  //constructor
+  //room(int num, char N, char D);
   //setters
-  void setDescription();
-  void setName();
-  void setId();
+  void setDescription(char);
+  void setName(char);
+  void setId(int);
   //getters
-  char getDescription() const;
-  char getName() const;
-  char getId() const;
+  char getDescription();
+  char getName();
+  char getId();
+};
 
-  void display() const;
-  }
-}

@@ -2,11 +2,11 @@
 #include <cstring>
 #include <vector>
 #include <map>
-#include <room.cpp>
-using namespace std
+#include "room.h"
+using namespace std;
 
 int main(){
-  
+  char input[150];
     
   
 

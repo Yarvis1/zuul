@@ -2,36 +2,32 @@
 #include <cstring>
 #include <vector>
 #include <map>
-#include <room.h>
+#include "room.h"
 //setting
-room::room(int roomId,const char* roomName, const char* roomDescription){
-  strncpy(name,roomName,sizeof(name)-1);
-  name[sizeof(name)-1]='\0';
-  strncpy(description,roomDescription.sizeof(description)-1);
-  description[sizeoof(description
-}
-void room:: setDescription(const char* roomDescription){
+//room::room(int num,char N,char D){
+//roomId = num;
+//name=N;
+//description=D;
+//}
+void room:: setDescription(char input){
   description = input;
 }
 
-void room:: setName(const char* roomName){
+void room:: setName(char input){
   name = input;
 }
-void room:: setId(int roomId){
+void room:: setId(int input){
   roomId = input;
 }
 //getting
-void room::getId() const{
+char room::getId(){
   return roomId;
 }
 
-void room::getName() const{
+char room::getName(){
   return name;
 }
 
-void room::getDescription() const{
-  return description[150]
-}
-void room::display() const{
-
+int room::getDescription(){
+  return description;
 }
